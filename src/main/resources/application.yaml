@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: franchises
+  mongodb:
+    uri: ${MONGO_URI}
+    database: ${MONGO_DATABASE}
+

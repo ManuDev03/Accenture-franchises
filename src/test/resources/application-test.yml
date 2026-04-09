@@ -1,0 +1,8 @@
+spring:
+    mongodb:
+      database: accenture_test
+
+logging:
+  level:
+    com.accenture.franquicias: DEBUG
+    org.springframework.data.mongodb: WARN
