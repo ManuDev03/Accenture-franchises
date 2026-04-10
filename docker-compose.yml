@@ -1,0 +1,12 @@
+services:
+  franchises-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: franchises-api
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      MONGO_URI: ${MONGO_URI}
+      MONGO_DATABASE: ${MONGO_DATABASE:-franquiciasdb}
